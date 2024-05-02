@@ -8,7 +8,7 @@ nginx_collection = client.logs.nginx
 
 def count(filter: dict = {}) -> int:
     """Count the number of elements of the collection given a dict filter"""
-    return nginx_collection.count_documents (filter)
+    return nginx_collection.count_documents(filter)
 
 
 if __name__ == "__main__":
