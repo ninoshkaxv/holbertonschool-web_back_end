@@ -60,7 +60,7 @@ class Server:
         indexed_keys_slice = indexed_keys[begin_index:begin_index + page_size]
         data = [self.indexed_dataset()[key] for key in indexed_keys_slice]
         return {
-            "index: index,
+            "index": index,
             "next_index": indexed_keys_slice[-1] + 1,
             "page_size": page_size,
             "data": data
